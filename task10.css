@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+*::selection{background-color: transparent;}
+body{display: flex;}
+.arrow_up{
+   width: 50px;
+   height: 25px;
+   border-radius: 10px;
+   position: fixed;
+   right: 10px;
+   bottom: 10px;
+   background-color: rgb(151, 192, 255);
+   color: gray;
+}
+.fa-angle-up{
+   position: absolute;
+   top: 13px;
+   left: 10px;
+}
+.arrow_up:hover{
+   background-color: rgb(51, 55, 255);
+}
+.arrow_up:hover .fa-angle-up{
+   color: aqua;
+}
+a{
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.container1{
+    width: 15%;
+    background-color: rgb(151, 192, 255);
+    font-weight: bold;
+    position: relative;
+}
+.up1{
+    margin: 5px 20px;
+    display: grid;
+    gap: 30px;
+    position: relative;
+}
+.up1 .logo , .up1 .logo b{
+    margin: 20px 0;
+    font-size: 25px;
+}
+.up1 a{
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.up1 .create{
+    background-color: rgb(134, 134, 255);
+    color: white;
+}
+.up1 .create:hover{
+    background-color: blue;
+}
+.up1 a:hover:not(.create){
+    background-color: black;
+}
+.down{
+   width: 100%;
+    margin: 5px 0;
+    display: grid;
+    position: sticky;
+    top: 0;
+    gap: 50px;
+}
+.down a{
+    padding: 10px;
+}
+.down a:hover{
+    background-color: rgb(82, 82, 255);
+    border-radius: 10px;
+}
+ /**************************************************/
+ .container2{
+    width: 85%;
+    background-color: rgb(198, 221, 255);
+    font-size: 12px;
+ }
+ .cont2{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 50px;
+ }
+ .up2{
+    margin: 30px 0;
+    display: flex;
+    position: relative;
+    gap: 50px;
+ }
+ .up2 input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px 50px;
+ }
+ .up2 .acc{
+    position: absolute;
+    right: 10px;
+    margin: 10px 50px  ;
+    display: flex;
+ }
+ .up2 .accinfo {
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    text-align: center;
+ }
+.acc-pic{
+    min-width: 50px;
+    min-height: 50px;
+    background-image: url(aot.jpeg);
+    border-radius: 50%;
+    background-size: cover;
+ }
+ .acc a:hover{
+   color: crimson;
+   transition: 0.5s;
+}
+ .lnks{
+    display: flex;
+    margin: 30px 0;
+    gap: 20px;
+ }
+ .lnks a{
+    background-color: white;
+    padding: 7px 15px;
+    border: 1px solid gray;
+    border-radius: 50px;
+ }
+ .lnks a:hover{
+   background-color: gray;
+ }
+/*****************************************************************/
+ .gridcont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 50px;
+ }
+ .griditem{
+    width: 175px;
+    height: 200px;
+    border: 5px solid black;
+    border-start-start-radius: 50px;
+    border-end-end-radius: 50px;
+    border-start-end-radius:50px;
+    border-spacing: 5px;
+    position: relative;
+    background-size: cover;
+ }
+ .griditem:hover{
+   border: 5px ridge #00ff00 ;
+   border-radius: 0px;
+   background-size: cover;
+   transition: 0.5s;
+ }
+ .itemname{
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    background-color: black;
+    color: #00ff00 ;
+ }
+ .griditem:hover .itemname{
+   background-color: #00ff00 ;
+   bottom: -22px;
+   left: -5px;
+   color: black;
+ }
+ .fa-heart{
+   position: absolute;
+   right: -5px;
+   bottom: -23px;
+   
+   font-size: 18px;
+   color: #000000;
+ }
+ .griditem:hover .fa-heart{
+   right: -5px;
+   bottom: -23px;
+   font-size: 18px;
+   color: #ff0000;
+ }
+ .item1{
+    width: 200px;
+    height: 530px;
+    background-image: url(Eren.webp);
+    grid-row: 1/3;
+ }
+ .item2{
+   width: 200px; 
+   height: 240px;  
+    background-image: url(mikasa.webp);
+ }
+ .item3{
+   width: 200px; 
+   height: 240px;  
+     background-image: url(armin.jpg);
+ }
+ .item4{
+    width: 220px;   
+    height: 240px;  
+     background-image: url(Levi.webp);
+ }
+ .item5{
+     background-image: url(Annie.webp);
+    grid-row: 3/4;
+ }
+ .item6{
+    width: 420px;
+    height: 240px;
+     background-image: url(erwin.jpg);
+    grid-column: 2/4;
+ }
+ .item7{
+    width: 220px;
+    height: 240px;
+     background-image: url(Hange.webp);
+ }
+ .item8{
+     background-image: url(reiner.jpg);
+ }
+ .item9{
+   background-image: url(Bertholdt_Hoover.webp);
+   background-size: cover;
+ }
+ .item10{
+    width: 220px;
+     background-image: url(Zeke.webp);
+ }
+ .item11{
+   width: 420px;
+   background-image: url(annie\,berto\,reiner.jpg);
+ }
+ .item12{
+   grid-column: 3/4;
+     background-image: url(porco\ galliard.jpeg);
+ }
+ .item13{
+    width: 220px;
+     background-image: url(Pieck.webp);
+ }
+ .item14{
+     background-image: url(SashaBraus.jpg);
+ }
+ .item15{
+     background-image: url(connie\ springer.jpg);
+ }
+ .item16{
+     background-image: url(jean.jpg);
+ }
+ .item17{
+   width: 220px;
+     background-image: url(Floch\ Forster.jpg);
+ }
+ .item18{
+   width: 420px;
+   height: 240px;
+     background-image: url(sasha\,\ connie\ &jean.jpg);
+ }
+ .item19{
+   width: 460px;
+   height: 240px;
+   grid-column: 3/5;
+     background-image: url(Shinzo\ wo\ Sasageyo.jpg);
+ }
+ .item20{
+     background-image: url(Hestoria.jpg);
+ }
+ .item21{
+     background-image: url(frida\ reiss.jpg);
+ }
+ .item22{
+    background-image: url(Ymir_Fritz.webp);
+   }
+.item23{
+    width: 220px;
+     background-image: url(Karl\ Fritz.jpeg);
+ }
+ .item24{
+     background-image: url(Grisha.webp);
+ }
+ .item25{
+     background-image: url(carla\ jeager.jpeg);
+ }
+ .item26{
+     background-image: url(Kenny.jpeg);
+ }
+ .item27{
+   width: 220px;
+     background-image: url(Dot\ pixis.jpg);
+ }
+ .item28{
+     background-image: url(petra\ rall.jpeg);
+ }
+ .item29{
+     background-image: url(Hannes.jpg);
+ }
+ .item30{
+     background-image: url(Marco\ Bodt.jpeg);
+ }
+ .item31{
+    width: 220px;
+    background-image: url(Mike\ Zacharias.webp);
+}
+ .item32{
+    background-image: url(Marcel\ Galliard.jpg);
+}
+ .item33{
+    background-image: url(Falco\ grice.jpeg);
+}
+ .item34{
+    background-image: url(Colt\ Grice.jpeg);
+}
+ .item35{
+    width: 220px;
+    background-image: url(Gabi.jpg);
+}
+ .item36{
+    background-image: url(Keith\ shadis.png);
+}
+ .item37{
+    background-image: url(Theo\ Magath.jpeg);
+}
+ .item38{
+    background-image: url(willy\ tybur.jpeg);
+}
+ .item39{
+    width: 220px;
+    background-image: url(Lara.png);
+}
