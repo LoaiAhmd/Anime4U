@@ -3,6 +3,9 @@
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.5s;
 }
+html{
+    scroll-behavior: smooth;
+}
 *::selection{background-color: transparent;}
 body{display: flex;}
 .arrow_up{
@@ -13,7 +16,8 @@ body{display: flex;}
    right: 10px;
    bottom: 10px;
    background-color: rgb(151, 192, 255);
-   color: gray;
+   color: rgb(198, 221, 255);
+   z-index: 1;
 }
 .fa-angle-up{
    position: absolute;
@@ -40,15 +44,15 @@ a:hover{
     font-weight: bold;
     position: relative;
 }
+.logo{
+    padding: 25px 0;
+    font-size: 25px;
+}
 .up1{
     margin: 5px 20px;
     display: grid;
     gap: 30px;
     position: relative;
-}
-.up1 .logo , .up1 .logo b{
-    margin: 20px 0;
-    font-size: 25px;
 }
 .up1 a{
     padding: 20px 10px;
@@ -93,7 +97,7 @@ a:hover{
     padding-bottom: 50px;
  }
  .up2{
-    margin: 30px 0;
+    padding: 15px 0;
     display: flex;
     position: relative;
     gap: 50px;
