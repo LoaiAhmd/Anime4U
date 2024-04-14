@@ -4,6 +4,7 @@
     }
     .arrow_up{
         background-color: #90ff90;
+        color: #c7ffc7;
     }
     .container1{
         width: 600px;
@@ -89,6 +90,7 @@
     }
     .arrow_up{
         background-color: rgb(255, 148, 148);
+        color: #ffcdcd;
         z-index: 1;
     }
     .container1{
@@ -101,7 +103,7 @@
         gap: 10px;
     }
     .logo{
-        font-size: 10px;
+        font-size: 20px;
     }
     .up1 a{
         padding: 10px 15px;
@@ -162,6 +164,7 @@
     }
     .arrow_up{
         background-color: rgb(118, 255, 221);
+        color: rgb(186, 255, 238);
     }
     .container1{
         width: 25%;
@@ -206,3 +209,58 @@
         background-size: cover;
     }
     }
+
+    /****************************************************************************************/
+    /****************************************************************************************/
+
+    @media only screen and (min-width: 1025px) and (max-width: 1200px){
+        body {
+            display: flex;
+        }
+        .arrow_up{
+            background-color: rgb(194, 157, 255);
+            color: rgb(225, 206, 255);
+            }
+        .container1{
+            width: 20%;
+            background-color: rgb(194, 157, 255);
+        }
+        .container2{
+            width: 80%;
+            background-color: rgb(225, 206, 255);
+        }
+        .up2{
+            display: flex;
+        }
+        input{
+            position: relative;
+            right: 10%;
+        }
+        .acc{
+            position: relative;
+            left: 50%;
+        }
+        .gridcont{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .griditem{
+            width: 180px;
+            height: 200px;
+        }
+        .item1{
+            width: 280px;
+            height: 400px;
+        }
+        .item2{
+            width: 280px;
+            height: 400px;
+        }
+        .item6, .item11, .item18, .item19{
+            width: 300px;
+            height: 170px;
+            background-size: cover;
+        }
+        }
