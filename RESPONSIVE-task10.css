@@ -29,19 +29,28 @@
         gap: 5%;
     }
     .logo{
+        width: fit-content;
         grid-column: 1/7;
+        font-size: 45px;
+        position: relative;
+        left: 28%;
     }
     .down{
         height: fit-content;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        font-size: 25px;
         position: relative;
         right: 7%;
     }
     .down a:hover{
         border-radius: 10px;
         background-color: #36ff36;
+    }
+    .logout{
+        position: relative;
+        left: 240px;
     }
     .container2{
         width: 600px;
@@ -65,15 +74,28 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 20px;
+        gap: 40px;
     }
     .griditem{
-        width: 210px;
-        height: 200px;
+        width: 350px;
+        height: 350px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .itemname{
+        font-size: 25px;
+    }
+    .fa-heart ,.griditem:hover .fa-heart{
+        font-size: 25px;
+        bottom: -30px;
+    }
+    .griditem:hover .itemname{
+        bottom: -32px;
     }
     .item1{
         width: 440px;
-        height: 500px;
+        height: 530px;
     }
     .item6, .item11, .item18, .item19{
         width: 440px;
